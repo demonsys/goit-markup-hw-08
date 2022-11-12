@@ -1,0 +1,30 @@
+.features {
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    @extend %list;
+  }
+  &__item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__subtitle {
+    position: absolute;
+    bottom: 0;
+    padding: 27px;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-light-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

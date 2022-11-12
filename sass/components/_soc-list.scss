@@ -1,0 +1,30 @@
+.soc-list {
+  @extend %centeredFlex;
+  gap: 10px;
+  @extend %list;
+
+  &__link {
+    @extend %centeredFlex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: #afb1b8;
+    background-color: var(--main-light-color);
+    transition: background-color 250ms var(--animation-function),
+      color 250ms var(--animation-function);
+
+    &--dark {
+      color: var(--main-light-color);
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--main-light-color);
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

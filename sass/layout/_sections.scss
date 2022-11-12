@@ -1,0 +1,11 @@
+.section {
+  padding: 94px 0;
+
+  &-title {
+    color: var(--main-dark-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+}

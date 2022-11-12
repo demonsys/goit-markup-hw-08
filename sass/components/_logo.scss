@@ -1,0 +1,14 @@
+.logo {
+  color: var(--accent-color);
+  font-family: $logo-font-stack;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &—-dark-piece {
+    color: #000000;
+  }
+  &-—white-piece {
+    color: var(--main-light-color);
+  }
+}

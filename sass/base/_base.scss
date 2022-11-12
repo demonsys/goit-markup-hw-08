@@ -1,0 +1,28 @@
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: $text-font-stack;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+// ul {
+//   list-style: none;
+// }

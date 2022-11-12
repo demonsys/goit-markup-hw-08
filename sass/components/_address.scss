@@ -1,0 +1,33 @@
+.address-list {
+  @extend %list;
+
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__contacts {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms var(--animation-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  &__location {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--main-light-color);
+    transition: color 250ms var(--animation-function);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}

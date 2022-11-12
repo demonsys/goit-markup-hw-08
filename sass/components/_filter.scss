@@ -1,0 +1,35 @@
+.filter {
+  @extend %centeredFlex;
+  margin-bottom: 50px;
+  @extend %list;
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  &__button {
+    background-color: var(--secondary-bcg-color);
+    color: var(--main-dark-color);
+    border: 0;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background: var(--secondary-bcg-color);
+    border-radius: 4px;
+    padding: 6px 22px;
+    transition: background-color 250ms var(--animation-function),
+      color 250ms var(--animation-function), box-shadow 250ms var(--animation-function);
+
+    &:hover,
+    &:focus,
+    &--active {
+      background-color: var(--accent-color);
+      color: var(--main-light-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}

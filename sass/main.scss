@@ -1,0 +1,32 @@
+@import './base/normalize';
+
+@import './utils/fonts';
+@import './utils/variables';
+@import './utils/utils';
+@import './utils/placeholders';
+
+@import './base/base';
+
+@import './components/logo';
+@import './components/contacts';
+@import './components/soc-list';
+@import './components/card-set';
+@import './components/button';
+@import './components/address';
+@import './components/filter';
+@import './components/project-cards';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/close-button';
+@import './components/contact-form';
+@import './components/checkbox';
+
+@import './layout/sections';
+@import './layout/page-header';
+@import './layout/site-nav';
+@import './layout/hero-section';
+@import './layout/benefits-section';
+@import './layout/features-section';
+@import './layout/clients-section';
+@import './layout/team-section';
+@import './layout/page-footer';

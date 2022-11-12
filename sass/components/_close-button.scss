@@ -1,0 +1,19 @@
+.close-button {
+  position: absolute;
+  @extend %centeredFlex;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  background: none;
+  transition: fill 250ms var(--animation-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}

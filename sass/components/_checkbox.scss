@@ -1,0 +1,28 @@
+.checkbox {
+  &__label {
+    @extend %centeredFlex;
+    position: relative;
+    height: 24px;
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 30px;
+  }
+  &__link {
+    text-decoration: underline;
+    color: var(--accent-color);
+  }
+  &__icon {
+    border: 2px solid var(--main-dark-color);
+    border-radius: 2px;
+    fill: none;
+    margin-right: 7px;
+    transition: background-color 250ms var(--animation-function),
+      fill 250ms var(--animation-function), border 250ms var(--animation-function);
+
+    .checkbox__input:checked + & {
+      background-color: var(--accent-color);
+      fill: var(--main-light-color);
+      border: 0;
+    }
+  }
+}
