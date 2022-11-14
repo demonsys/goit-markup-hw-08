@@ -1,14 +1,18 @@
 .clients {
-  &__title {
-    margin-bottom: 50px;
-  }
   &__list {
-    display: flex;
+    @extend %centeredFlex;
+    flex-wrap: wrap;
     gap: 30px;
     @extend %list;
   }
   &__item {
-    width: calc((100% - 150px) / 6);
+    flex-basis: calc((100% - 30px) / 2);
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+    @media screen and (min-width: $desktop) {
+      flex-basis: calc((100% - 150px) / 6);
+    }
   }
   &__link {
     @extend %centeredFlex;

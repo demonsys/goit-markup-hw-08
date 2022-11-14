@@ -5,8 +5,21 @@
 
   &__outbox {
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: space-between;
+
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
   }
   &__logo {
     display: block;
@@ -21,9 +34,11 @@
     color: var(--main-light-color);
     margin-bottom: 20px;
   }
-
+  &__form-subscribe {
+    width: 570px;
+  }
   &__input {
-    width: 358px;
+    max-width: 100%;
     height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);

@@ -1,6 +1,7 @@
 .features {
-  &__title {
-    margin-bottom: 50px;
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
   }
   &__list {
     display: flex;
