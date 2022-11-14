@@ -306,15 +306,18 @@
                                 </svg> </a></li>
                     </ul>
                 </div>
-                <form name="form-subscribe" class="page-footer__form-subscribe">
-                    <label for="subscribe" class="page-footer__subtitle">Підпишіться на розсилку</label>
-                    <input type="email" name="email" id="subscribe" class="page-footer__input" placeholder="E-mail">
-                    <button type="submit" class="button page-footer__button">Підписатися
-                        <svg class="button__append" width="24" height="24">
-                            <use href="./images/icons.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
+                <div class="page-footer__subscribe-container">
+                    <p class="page-footer__subtitle">Підпишіться на розсилку</p>
+                    <form name="form-subscribe" class="page-footer__form-subscribe">
+
+                        <input type="email" name="email" class="page-footer__input" placeholder="E-mail">
+                        <button type="submit" class="button page-footer__button">Підписатися
+                            <svg class="button__append" width="24" height="24">
+                                <use href="./images/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>

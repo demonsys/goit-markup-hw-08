@@ -1139,7 +1139,6 @@ img {
   margin-bottom: 20px;
 }
 .page-footer__subtitle {
-  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1147,11 +1146,49 @@ img {
   color: var(--main-light-color);
   margin-bottom: 20px;
 }
+.page-footer__subscribe-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .page-footer__subscribe-container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__subscribe-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 .page-footer__form-subscribe {
-  width: 570px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .page-footer__input {
-  max-width: 100%;
+  display: block;
+  margin: 0 auto;
   height: 50px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -1207,14 +1244,18 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 .page-footer__button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .page-footer__button {
+    margin-left: 12px;
+  }
 }/*# sourceMappingURL=main.css.map */

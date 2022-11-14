@@ -26,7 +26,6 @@
     margin-bottom: 20px;
   }
   &__subtitle {
-    display: block;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -34,11 +33,27 @@
     color: var(--main-light-color);
     margin-bottom: 20px;
   }
+  &__subscribe-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      justify-content: space-between;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: space-between;
+    }
+  }
   &__form-subscribe {
-    width: 570px;
+    text-align: center;
+    justify-content: center;
   }
   &__input {
-    max-width: 100%;
+    display: block;
+    margin: 0 auto;
     height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -56,9 +71,11 @@
     }
   }
   &__button {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 12px;
+    @media screen and (min-width: $desktop) {
+      margin-left: 12px;
+    }
   }
 }
