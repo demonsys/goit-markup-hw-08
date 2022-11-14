@@ -18,14 +18,35 @@
             <nav class="page-header__nav">
                 <a href="./index.html" class="logo page-header__logo">Web<span
                         class="logo—-dark-piece">Studio</span></a>
-                <ul class="site-nav">
+                <button type="button" class="menu-button js-open-menu" aria-expanded="false"
+                    aria-controls="mobile-menu"><svg width="24" height="16" aria-label="Кнопка меню">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg></button>
+                <div class="menu-containerjs-menu-container" id="mobile-menu">
+                    <button class="menu-toggle js-close-menu">
+                        <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24">
+                            <path fill-rule="evenodd"
+                                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </button>
+
+                    <ul class="mobile-menu">
+                        <li><a href="" class="link">About</a></li>
+                        <li><a href="" class="link">Products</a></li>
+                        <li><a href="" class="link">Contacts</a></li>
+                        <li><a href="" class="link">Career</a></li>
+                    </ul>
+                </div>
+                <!-- <ul class="site-nav">
                     <li class="site-nav__item"><a href="./index.html"
                             class="site-nav__link site-nav__link--active">Студія</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
                     <li class="site-nav__item"><a href="#" class="site-nav__link">Контакти</a></li>
-                </ul>
+                </ul> -->
             </nav>
-            <ul class="contacts-list">
+            <!-- <ul class="contacts-list">
                 <li class="contacts-list__item"><a href="mailto:info@devstudio.com" class="contacts-list__link">
                         <svg width="16" height="12">
                             <use href="./images/icons.svg#icon-envelope"></use>
@@ -35,7 +56,7 @@
                             width="10" height="16">
                             <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a></li>
-            </ul>
+            </ul> -->
         </div>
     </header>
     <main>
@@ -376,6 +397,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

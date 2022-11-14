@@ -335,7 +335,7 @@ summary {
   }
 }
 
-.clients__link, .clients__list, .benefits__thumb, .hero, .checkbox__label, .close-button, .filter, .soc-list__link, .soc-list {
+.clients__link, .clients__list, .benefits__thumb, .hero, .menu-button, .checkbox__label, .close-button, .filter, .soc-list__link, .soc-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -831,6 +831,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: none;
 }
 
 .site-nav__item:not(:last-child) {
@@ -1091,13 +1104,6 @@ img {
   background-color: var(--section-background-color);
 }
 .page-footer__outbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
