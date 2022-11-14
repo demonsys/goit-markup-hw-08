@@ -1,5 +1,6 @@
 .features {
   display: none;
+  padding: 0;
   @media screen and (min-width: $desktop) {
     display: block;
   }

@@ -1,6 +1,4 @@
 .benefits {
-  padding-bottom: 0;
-
   &__list {
     @media screen and (min-width: $tablet) {
       display: flex;
@@ -10,7 +8,9 @@
     @extend %list;
   }
   &__item {
-    margin-bottom: 30px;
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
 
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
       margin-right: 30px;

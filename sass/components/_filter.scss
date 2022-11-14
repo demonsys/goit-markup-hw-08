@@ -2,6 +2,7 @@
   @extend %centeredFlex;
   margin-bottom: 50px;
   @extend %list;
+  flex-wrap: wrap;
 
   &__item:not(:last-child) {
     margin-right: 8px;

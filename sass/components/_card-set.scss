@@ -1,10 +1,26 @@
 .card-set {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
   @extend %list;
 
   &__item {
-    flex-basis: calc((100% - 60px) / 3);
+    border: 1px dotted black;
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      flex-basis: calc((100% - 30px) / 2);
+      &:nth-child(2n + 1) {
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      margin-bottom: 0;
+      flex-basis: calc((100% - 90px) / 4);
+      &:not(:last-child) {
+      }
+    }
   }
 }
