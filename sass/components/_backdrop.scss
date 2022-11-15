@@ -6,7 +6,9 @@
   height: 100%;
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   transition: opacity 250ms var(--animation-function), visibility 250ms var(--animation-function);
+  padding: 93px 15px;
 
   &--hidden {
     opacity: 0;

@@ -360,6 +360,9 @@ body {
   font-weight: 400;
   letter-spacing: 0.03em;
 }
+body.disable-scroll {
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -641,8 +644,10 @@ img {
   height: 100%;
   opacity: 1;
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
   -webkit-transition: opacity 250ms var(--animation-function), visibility 250ms var(--animation-function);
   transition: opacity 250ms var(--animation-function), visibility 250ms var(--animation-function);
+  padding: 93px 15px;
 }
 .backdrop--hidden {
   opacity: 0;
@@ -654,6 +659,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   background-color: var(--background-color);
@@ -664,9 +670,18 @@ img {
   transition: -webkit-transform 250ms var(--animation-function), -webkit-box-shadow 250ms var(--animation-function);
   transition: transform 250ms var(--animation-function), box-shadow 250ms var(--animation-function);
   transition: transform 250ms var(--animation-function), box-shadow 250ms var(--animation-function), -webkit-transform 250ms var(--animation-function), -webkit-box-shadow 250ms var(--animation-function);
-  padding: 40px;
-  width: 450px;
-  height: 609px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .backdrop--hidden .modal {
   -webkit-transform: translate(-50%, -50%) scale(0.9);
@@ -794,7 +809,7 @@ img {
 .checkbox__label {
   position: relative;
   height: 24px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   margin-bottom: 30px;
 }

@@ -4,6 +4,9 @@ body {
   font-family: $text-font-stack;
   font-weight: 400;
   letter-spacing: 0.03em;
+  &.disable-scroll {
+    overflow: hidden;
+  }
 }
 h1,
 h2,

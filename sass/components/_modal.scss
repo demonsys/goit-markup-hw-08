@@ -2,18 +2,22 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   transform: translate(-50%, -50%) scale(1);
   background-color: var(--background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms var(--animation-function), box-shadow 250ms var(--animation-function);
-  padding: 40px;
-  width: 450px;
-  height: 609px;
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+    height: 609px;
+  }
 
-  // width: 528px;
-  // height: 581px;
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
 
   .backdrop--hidden & {
     transform: translate(-50%, -50%) scale(0.9);
