@@ -8,6 +8,9 @@
     margin: 0;
     cursor: pointer;
     background: none;
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
   }
   &__container {
     // display: none;
