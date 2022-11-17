@@ -463,19 +463,21 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-.burger-menu__soc-item:not(:last-child) {
-  padding: 0 10px;
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-.burger-menu__soc-item:first-child {
-  padding-left: 0;
-}
 .burger-menu__soc-link {
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+.burger-menu__dividing-line {
+  display: inline-block;
+  width: 22px;
+  height: 0px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  padding: 0 10px;
 }
 
 .logo {
