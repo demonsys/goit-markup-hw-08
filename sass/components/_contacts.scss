@@ -4,9 +4,9 @@
     display: flex;
   }
   @extend %list;
-  &--burger-menu {
-    display: inline;
-  }
+  // &--burger-menu {
+  //   display: inline;
+  // }
 
   &__item:not(:last-child) {
     margin-right: 50px;
