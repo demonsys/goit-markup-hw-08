@@ -347,7 +347,7 @@ summary {
           justify-content: center;
 }
 
-.team__list, .clients__list, .features__list, .benefits__list, .site-nav, .project-card, .filter, .address-list, .card-set, .soc-list, .contacts-list {
+.team__list, .clients__list, .features__list, .benefits__list, .site-nav, .project-card, .filter, .address-list, .card-set, .soc-list, .contacts-list, .burger-menu__soc-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -405,7 +405,7 @@ img {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 40px;
   background-color: #fff;
   z-index: 999;
   -webkit-transform: translateX(100%);
@@ -425,7 +425,6 @@ img {
   right: 15px;
   color: #fff;
 }
-
 .logo {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -447,9 +446,17 @@ img {
 }
 
 .contacts-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.contacts-list--burger-menu {
+  display: inline;
 }
 .contacts-list__item:not(:last-child) {
   margin-right: 50px;
@@ -913,7 +920,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .page-header__logo {
-    margin-right: 93px;
+    margin-right: 92px;
   }
 }
 .page-header__container {
@@ -933,6 +940,7 @@ img {
   }
 }
 .page-header__nav {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -945,12 +953,20 @@ img {
 }
 
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.site-nav--burger-menu {
+  display: inline;
 }
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
@@ -983,6 +999,22 @@ img {
   height: 4px;
   background-color: currentColor;
   border-radius: 2px;
+}
+@media screen and (max-width: 768px) {
+  .site-nav__link {
+    font-size: 40px;
+    line-height: 1.17;
+    padding: 0;
+  }
+  .site-nav__link--active::after {
+    display: none;
+  }
+  .site-nav__item {
+    margin: 0;
+  }
+  .site-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
 .hero {

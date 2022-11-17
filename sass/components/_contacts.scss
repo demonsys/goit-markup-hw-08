@@ -1,6 +1,12 @@
 .contacts-list {
-  display: flex;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
   @extend %list;
+  &--burger-menu {
+    display: inline;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;

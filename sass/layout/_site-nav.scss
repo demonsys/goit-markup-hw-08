@@ -1,7 +1,13 @@
 .site-nav {
-  display: flex;
-  align-items: center;
   @extend %list;
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: center;
+  }
+  &--burger-menu {
+    display: inline;
+  }
 
   &__item:not(:last-child) {
     margin-right: 50px;
@@ -35,6 +41,22 @@
       height: 4px;
       background-color: currentColor;
       border-radius: 2px;
+    }
+  }
+  @media screen and (max-width: $tablet) {
+    &__link {
+      font-size: 40px;
+      line-height: 1.17;
+      padding: 0;
+      &--active::after {
+        display: none;
+      }
+    }
+    &__item {
+      margin: 0;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 32px;
     }
   }
 }
