@@ -1,15 +1,18 @@
 .contacts-list {
   display: none;
-  @media screen and (min-width: $tablet) {
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
+  }
+  @media screen and (min-width: $desktop) {
     display: flex;
   }
   @extend %list;
-  // &--burger-menu {
-  //   display: inline;
-  // }
-
   &__item:not(:last-child) {
-    margin-right: 50px;
+    margin-bottom: 10px;
+    @media screen and (min-width: $desktop) {
+      margin-right: 50px;
+      margin-bottom: 0;
+    }
   }
   &__link {
     display: flex;
