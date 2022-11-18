@@ -1,8 +1,17 @@
 .filter {
-  @extend %centeredFlex;
-  margin-bottom: 50px;
   @extend %list;
-  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  @media screen and (max-width: calc($tablet - 1px)) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: start;
+    max-width: 350px;
+    &__item:first-child {
+      margin-bottom: 15px;
+    }
+  }
 
   &__item:not(:last-child) {
     margin-right: 8px;
@@ -21,6 +30,9 @@
     background: var(--secondary-bcg-color);
     border-radius: 4px;
     padding: 6px 22px;
+    @media screen and (max-width: 360px) {
+      padding: 6px 15px;
+    }
     transition: background-color 250ms var(--animation-function),
       color 250ms var(--animation-function), box-shadow 250ms var(--animation-function);
 

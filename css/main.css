@@ -335,7 +335,7 @@ summary {
   }
 }
 
-.clients__link, .clients__list, .benefits__thumb, .hero, .checkbox__label, .close-button, .filter, .soc-list__link, .soc-list, .burger-menu__button {
+.clients__link, .clients__list, .benefits__thumb, .hero, .checkbox__label, .close-button, .soc-list__link, .soc-list, .burger-menu__button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -679,9 +679,27 @@ img {
 }
 
 .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+}
+@media screen and (max-width: 767px) {
+  .filter {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    max-width: 350px;
+  }
+  .filter__item:first-child {
+    margin-bottom: 15px;
+  }
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
@@ -703,6 +721,11 @@ img {
   transition: background-color 250ms var(--animation-function), color 250ms var(--animation-function), -webkit-box-shadow 250ms var(--animation-function);
   transition: background-color 250ms var(--animation-function), color 250ms var(--animation-function), box-shadow 250ms var(--animation-function);
   transition: background-color 250ms var(--animation-function), color 250ms var(--animation-function), box-shadow 250ms var(--animation-function), -webkit-box-shadow 250ms var(--animation-function);
+}
+@media screen and (max-width: 360px) {
+  .filter__button {
+    padding: 6px 15px;
+  }
 }
 .filter__button:hover, .filter__button:focus, .filter__button--active {
   background-color: var(--accent-color);
@@ -1295,8 +1318,10 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.team__member:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__member:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .team__member {
@@ -1407,7 +1432,7 @@ img {
   }
 }
 .page-footer__input {
-  width: 450px;
+  width: 290px;
   height: 50px;
   margin-bottom: 20px;
   padding: 15px 16px;
@@ -1417,6 +1442,11 @@ img {
   border-radius: 4px;
   background-color: inherit;
   color: var(--main-light-color);
+}
+@media screen and (min-width: 480px) {
+  .page-footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .page-footer__input {

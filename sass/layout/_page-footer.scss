@@ -32,12 +32,6 @@
   &__subscribe-container {
     flex-direction: column;
     justify-content: center;
-
-    // @media screen and (min-width: $tablet) and (max-width: $desktop) {
-    // }
-    // @media screen and (min-width: $desktop) {
-    //   flex-direction: row;
-    // }
   }
   &__form-subscribe {
     display: flex;
@@ -49,7 +43,7 @@
     }
   }
   &__input {
-    width: 450px;
+    width: 290px;
     height: 50px;
     margin-bottom: 20px;
     padding: 15px 16px;
@@ -58,6 +52,9 @@
     border-radius: 4px;
     background-color: inherit;
     color: var(--main-light-color);
+    @media screen and (min-width: $mobile) {
+      width: 450px;
+    }
     @media screen and (min-width: $desktop) {
       width: 358px;
       margin-bottom: 0;
