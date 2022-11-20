@@ -10,10 +10,10 @@
   // Варіант А
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     image-set(
-      url('../../images/mobile/header-bcg-img-1x.webp') 1x,
-      url('../../images/mobile/header-bcg-img-2x.webp') 2x,
-      url('../../images/mobile/header-bcg-img-1x.jpg') 1x,
-      url('../../images/mobile/header-bcg-img-2x.jpg') 2x
+      url('/images/mobile/header-bcg-img-1x.webp') 1x,
+      url('/images/mobile/header-bcg-img-2x.webp') 2x,
+      url('/images/mobile/header-bcg-img-1x.jpg') 1x,
+      url('/images/mobile/header-bcg-img-2x.jpg') 2x
     );
   // Варіант Б
   // @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
