@@ -4,24 +4,43 @@
   text-align: center;
   background-color: var(--section-background-color);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero1.jpg);
-  max-width: 1600px;
-  height: 600px;
+    url(/images/mobile/header-1x.jpg);
+  height: 400px;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
 
+  @media screen and (min-width: $mobile) {
+    max-width: 480px;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 768px;
+    @media (min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/tablet/header-1x.jpg);
+    }
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/tablet/header-2x.jpg);
+    }
+  }
   &__title {
     color: var(--main-light-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
-    width: 696px;
+    max-width: 360px;
+
+    @media screen and (min-width: $desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
   &__button {
     padding-left: 32px;
