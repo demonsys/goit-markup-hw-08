@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: calc($tablet - 1px)) {
       padding: 10px 15px;
     }
   }
