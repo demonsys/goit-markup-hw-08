@@ -1404,8 +1404,14 @@ img {
   }
 }
 .team__box {
-  padding: 30px 32px;
+  padding-top: 30px;
+  padding-bottom: 24px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .team__box {
+    padding-bottom: 30px;
+  }
 }
 .team__name {
   color: var(--main-dark-color);

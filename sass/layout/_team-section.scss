@@ -35,8 +35,12 @@
     }
   }
   &__box {
-    padding: 30px 32px;
+    padding-top: 30px;
+    padding-bottom: 24px;
     text-align: center;
+    @media screen and (min-width: $desktop) {
+      padding-bottom: 30px;
+    }
   }
   &__name {
     color: var(--main-dark-color);
