@@ -1161,9 +1161,18 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/mobile/header-bcg-img-1x.webp") 1x, url("../images/mobile/header-bcg-img-2x.webp") 2x, url("../images/mobile/header-bcg-img-1x.jpg") 1x, url("../images/mobile/header-bcg-img-2x.jpg") 2x);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/mobile/header-bcg-img-1x.webp") 1x, url("../images/mobile/header-bcg-img-2x.webp") 2x, url("../images/mobile/header-bcg-img-1x.jpg") 1x, url("../images/mobile/header-bcg-img-2x.jpg") 2x);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/mobile/header-bcg-img-1x.webp") 1x, url("../images/mobile/header-bcg-img-2x.webp") 2x, url("../images/mobile/header-bcg-img-1x.jpg") 1x, url("../images/mobile/header-bcg-img-2x.jpg") 2x);
+}
+@media (min-device-pixel-ratio: 1), (-webkit-min-device-pixel-ratio: 1), (min-resolution: 96dpi), (min-resolution: 1dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/header-bcg-img-1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/header-bcg-img-1x.jpg");
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/header-bcg-img-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/header-bcg-img-2x.jpg");
+  }
 }
 @media screen and (min-width: 480px) {
   .hero {
