@@ -1,20 +1,18 @@
 .filter {
   @extend %list;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  @media screen and (max-width: calc($tablet - 1px)) {
-    flex-wrap: wrap;
-    margin-bottom: 40px;
-    justify-content: start;
-    max-width: 350px;
-    &__item:first-child {
-      margin-bottom: 15px;
-    }
-  }
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  max-width: 350px;
+  gap: 15px 8px;
 
-  &__item:not(:last-child) {
-    margin-right: 8px;
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+    margin-bottom: 30px;
+    max-width: none;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
   }
 
   &__button {
