@@ -161,10 +161,27 @@
                 <h2 class="section-title team__title">Наша команда</h2>
                 <ul class="team__list">
                     <li class="team__member">
-                        <img srcset="
-                        ./images/mobile/team-member01-1x.jpg 1x,
-                         ./images/mobile/team-member01-2x.jpg 2x" src="./images/ourteam-igor.jpg"
-                            alt="фото Ігоря Дем'яненко" width="270">
+                        <picture>
+                            <source
+                                srcset="./images/mobile/team-member01-1x.webp 1x, ./images/mobile/team-member01-2x.webp 2x"
+                                type="image/webp" media="(max-width: 767px)" />
+                            <source
+                                srcset="./images/mobile/team-member01-1x.jpg 1x, ./images/mobile/team-member01-2x.jpg 2x"
+                                type="image/jpeg" media="(max-width: 767px)" />
+                            <source
+                                srcset="./images/tablet/team-member01-1x.webp 1x, ./images/tablet/team-member01-2x.webp 2x"
+                                type="image/webp" media="(min-width: 768px)" />
+                            <source
+                                srcset="./images/tablet/team-member01-1x.jpg 1x, ./images/tablet/team-member01-2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 768px)" />
+                            <source
+                                srcset="./images/desktop/team-member01-1x.webp 1x, ./images/desktop/team-member01-2x.webp 2x"
+                                type="image/webp" media="(min-width: 1200px)" />
+                            <source
+                                srcset="./images/desktop/team-member01-1x.jpg 1x, ./images/desktop/team-member01-2x.jpg 2x"
+                                type="image/jpeg" media="(min-width: 1200px)" />
+                            <img src="./images/ourteam-igor.jpg" alt="фото Ігоря Дем'яненко">
+                        </picture>
                         <div class="team__box">
                             <h3 class="team__name">Ігор Дем'яненко</h3>
                             <p class="team__position">Product Designer</p>
