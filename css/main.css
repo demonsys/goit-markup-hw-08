@@ -1371,6 +1371,7 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 .team__member {
@@ -1389,18 +1390,12 @@ img {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
-  .team__member:nth-child(2n+1) {
-    margin-right: 30px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team__member {
     margin-bottom: 0;
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
-  }
-  .team__member:not(:last-child) {
-    margin-right: 30px;
   }
 }
 .team__box {
