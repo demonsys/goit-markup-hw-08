@@ -8,27 +8,27 @@
 
 @import './base/base';
 
-@import './components/mobile-menu';
-@import './components/logo';
-@import './components/contacts';
-@import './components/soc-list';
-@import './components/card-set';
-@import './components/button';
 @import './components/address';
-@import './components/filter';
-@import './components/project-cards';
 @import './components/backdrop';
-@import './components/modal';
+@import './components/button';
+@import './components/card-set';
+@import './components/checkbox';
 @import './components/close-button';
 @import './components/contact-form';
-@import './components/checkbox';
+@import './components/contacts';
+@import './components/filter';
+@import './components/logo';
+@import './components/mobile-menu';
+@import './components/modal';
+@import './components/project-cards';
+@import './components/soc-list';
 
-@import './layout/sections';
-@import './layout/page-header';
-@import './layout/site-nav';
-@import './layout/hero-section';
 @import './layout/benefits-section';
-@import './layout/features-section';
 @import './layout/clients-section';
-@import './layout/team-section';
+@import './layout/features-section';
+@import './layout/hero-section';
 @import './layout/page-footer';
+@import './layout/page-header';
+@import './layout/sections';
+@import './layout/site-nav';
+@import './layout/team-section';
