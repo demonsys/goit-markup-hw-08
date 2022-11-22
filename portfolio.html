@@ -88,7 +88,27 @@
                     <li class="card-set__item">
                         <a href="" class="project-card">
                             <div class="project-card__image">
-                                <img src="./images/project1.jpg" alt="ноутбук з відкритим вебсайтом" width="370">
+                                <picture>
+                                    <source
+                                        srcset="./images/mobile/project01@1x.webp 1x, ./images/mobile/project01@2x.webp 2x"
+                                        type="image/webp" media="(max-width: 767px)" />
+                                    <source
+                                        srcset="./images/mobile/project01@1x.jpg 1x, ./images/mobile/project01@2x.jpg 2x"
+                                        type="image/jpeg" media="(max-width: 767px)" />
+                                    <source
+                                        srcset="./images/desktop/project01@1x.webp 1x, ./images/desktop/project01@2x.webp 2x"
+                                        type="image/webp" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/desktop/project01@1x.jpg 1x, ./images/desktop/project01@2x.jpg 2x"
+                                        type="image/jpeg" media="(min-width: 1200px)" />
+                                    <source
+                                        srcset="./images/tablet/project01@1x.webp 1x, ./images/tablet/project01@2x.webp 2x"
+                                        type="image/webp" media="(min-width: 768px)" />
+                                    <source
+                                        srcset="./images/tablet/project01@1x.jpg 1x, ./images/tablet/project01@2x.jpg 2x"
+                                        type="image/jpeg" media="(min-width: 768px)" />
+                                    <img src="./images/tablet/project01@1x.jpg" alt="ноутбук з відкритим вебсайтом">
+                                </picture>
                                 <div class="project-card__overlay">
                                     <p>Ресурс пропонує комплексні пропозиції з різним
                                         рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
