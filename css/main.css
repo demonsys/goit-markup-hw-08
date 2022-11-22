@@ -1137,7 +1137,7 @@ img {
   background-color: currentColor;
   border-radius: 2px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .site-nav__link {
     font-size: 40px;
     line-height: 1.17;
