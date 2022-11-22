@@ -348,7 +348,7 @@ summary {
           justify-content: center;
 }
 
-.team__list, .clients__list, .features__list, .benefits__list, .site-nav, .project-card, .filter, .address-list, .card-set, .soc-list, .contacts-list, .mobile-menu__soc-list {
+.team__list, .clients__list, .features__list, .benefits__list, .site-nav, .project-card, .filter, .address-list, .card-set, .soc-list, .contacts-list, .mobile-menu__soc-list, .mobile-menu__site-nav {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -435,6 +435,28 @@ img {
   top: 10px;
   right: 15px;
   color: #fff;
+}
+.mobile-menu__site-nav {
+  display: inline;
+}
+.mobile-menu__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+.mobile-menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--main-dark-color);
+  -webkit-transition: color 250ms var(--animation-function);
+  transition: color 250ms var(--animation-function);
+}
+.mobile-menu__link:hover, .mobile-menu__link:focus {
+  color: var(--accent-color);
+}
+.mobile-menu__link--active {
+  color: var(--accent-color);
 }
 .mobile-menu__phone {
   color: var(--accent-color);
@@ -1102,9 +1124,6 @@ img {
             align-items: center;
   }
 }
-.site-nav--mobile-menu {
-  display: inline;
-}
 .site-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -1136,22 +1155,6 @@ img {
   height: 4px;
   background-color: currentColor;
   border-radius: 2px;
-}
-@media screen and (max-width: 767px) {
-  .site-nav__link {
-    font-size: 40px;
-    line-height: 1.17;
-    padding: 0;
-  }
-  .site-nav__link--active::after {
-    display: none;
-  }
-  .site-nav__item {
-    margin: 0;
-  }
-  .site-nav__item:not(:last-child) {
-    margin-bottom: 32px;
-  }
 }
 
 .hero {
