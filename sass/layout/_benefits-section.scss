@@ -3,29 +3,23 @@
     @media screen and (min-width: $tablet) {
       display: flex;
       flex-wrap: wrap;
+      gap: 30px;
     }
 
     @extend %list;
   }
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    @media screen and (max-width: $tablet) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
     @media screen and (min-width: $tablet) and (max-width: $desktop) {
-      margin-right: 30px;
       flex-basis: calc((100% - 30px) / 2);
-      &:nth-child(2n) {
-        margin-right: 0;
-      }
     }
     @media screen and (min-width: $desktop) {
-      margin-right: 30px;
-      margin-bottom: 0;
       flex-basis: calc((100% - 90px) / 4);
-      &:last-child {
-        margin-right: 0;
-      }
     }
   }
   &__thumb {

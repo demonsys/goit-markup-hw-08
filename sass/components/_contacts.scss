@@ -10,7 +10,7 @@
   &__item:not(:last-child) {
     margin-bottom: 10px;
     @media screen and (min-width: $desktop) {
-      margin-right: 50px;
+      margin-right: 30px;
       margin-bottom: 0;
     }
   }
@@ -19,12 +19,16 @@
     align-items: center;
     color: var(--primary-text-color);
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
-    gap: 10px;
+    gap: 8px;
     fill: currentColor;
     transition: color 250ms var(--animation-function);
+    @media screen and (min-width: $desktop) {
+      font-size: 14px;
+      line-height: 1.14;
+    }
 
     &:hover,
     &:focus {
